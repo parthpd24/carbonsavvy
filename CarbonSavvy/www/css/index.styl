@@ -1,6 +1,10 @@
 bg = #E7E7E7
 txtcol = #353535
 
+aligns(valr)
+    text-align: valr
+    float: valr
+
 fontstuff(size, color)
     font-family: 'Calibri', Helvetica, sans-serif
     font-size: size
@@ -12,6 +16,8 @@ body
     -webkit-user-select: none
     background-color: bg
     fontstuff(130%, txtcol)
+    aligns(center)
+    padding-top: 5%
 
 h1
     fontstuff(160%, txtcol - #11)
