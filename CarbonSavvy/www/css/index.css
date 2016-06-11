@@ -16,7 +16,7 @@ h1 {
   font-size: 160%;
   color: #242424;
 }
-.button {
+button {
   background-color: #5fd35f;
   border: none;
   padding: 15px 30px;
