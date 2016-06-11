@@ -16,6 +16,7 @@ h1 {
   font-size: 160%;
   color: #242424;
 }
+input[type=submit],
 button {
   background-color: #5fd35f;
   border: none;
