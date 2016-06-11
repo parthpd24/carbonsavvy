@@ -1,9 +1,5 @@
 # CarbonSavvy
-CarbonSavvy's GitHub
 
-Includes:
-CarbonSavvy Web App, 
-CarbonSavvy Algorithm Simulation, 
-CarbonSavvy Mobile App
+by Ahan Raina, Ben Mathew, Parth Deshmukh, and Alex Zhang.
 
-Code for Princeton 2016
+CarbonSavvy is an innovative, fun way to fight climate change. It starts with a friendly questionnare, asking you some basic questions. Then, it gives you a number - your carbon footprint. You can create a profile, and compete against your friends by adding lots of features.
