@@ -9,9 +9,20 @@ body {
   text-align: center;
   float: center;
   padding-top: 5%;
+  display: block;
 }
 h1 {
   font-family: 'Calibri', Helvetica, sans-serif;
   font-size: 160%;
   color: #242424;
+}
+.button {
+  background-color: #5fd35f;
+  border: none;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Calibri', Helvetica, sans-serif;
+  font-size: 20px;
+  color: #e7e7e7;
 }
