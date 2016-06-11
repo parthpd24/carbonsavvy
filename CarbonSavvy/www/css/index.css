@@ -3,4 +3,12 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-user-select: none;
   background-color: #e7e7e7;
+  font-family: 'Calibri', Verdana, Helvetica, sans-serif;
+  font-size: 130%;
+  color: #353535;
+}
+h1 {
+  font-family: 'Calibri', Verdana, Helvetica, sans-serif;
+  font-size: 160%;
+  color: #242424;
 }
