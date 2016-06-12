@@ -61,10 +61,40 @@ function CalcElectricFootprint(sessvars.myObj.kwh) //Final Equation for electric
     return FinalElecFootprint;
 }
 
+    /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=DIET FOOTPRINT FUNCTIONS=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+function Diet_Footprint(DietFoot Diet)
+{
+    var DietFootprint = 0;
+
+    switch (Diet.dietChoice)
+    {
+        case 0: //Vegan
+            DietFootprint = 1360.78; //1.5 Tons
+            break;
+        case 1: //Vegetarian
+            DietFootprint = 1542.21; //1.7 Tons
+            break;
+        case 2: //Non-Vegetarian
+            DietFootprint = 2267.96; //2.5 Tons
+            break;
+        default:
+            DietFootprint = 0;
+            break;
+    }
+
+    return DietFootprint;
+}
+
 function FinalFootprint()
 {
     var foot = CalcElectricFootprint() + Transportation_Footprint();
     return foot;
+}
+
+function FinalFootprintEmbed() 
+{
+    document.getElementById("footprint").innerHTML = FinalFootprint() + "killograms of CO2 per year."
 }
 
 var PrafulsLoveForTya = true;
