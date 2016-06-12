@@ -1,5 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -12,14 +13,20 @@
 </head>
 
 <body>
-    <div id="app">
-        
+    <div class="app">
+        <img src="img/largelogo.png" alt="CarbonSavvy logo">
+        <br>
+        <h1 id="nameplace" onload="nameoutput()"></h1>
+        <p>We have some questions for you.</p>
+        <br>
     </div>
-      <!-- Javascript files -->
+    <!-- Javascript files -->
+    <script type="text/javascript" src="js/formhandling.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
 </body>
+
 </html>

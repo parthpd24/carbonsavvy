@@ -19,14 +19,15 @@
         <h1>What is your name?</h1>
         <br>
         <form>
-            <input type="text" name="name">
+            <input type="text" name="name" value="">
             <br>
             <br>
             <br>
-            <input type="submit" value="Next">
+            <input type="submit" value="Next" onclick="namefunc(this.form)">
         </form>
     </div>
     <!-- Javascript files -->
+    <script type="text/javascript" src="js/formhandling.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
