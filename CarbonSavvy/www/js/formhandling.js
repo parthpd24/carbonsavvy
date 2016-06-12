@@ -63,7 +63,7 @@ function CalcElectricFootprint(sessvars.myObj.kwh) //Final Equation for electric
 
     /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=DIET FOOTPRINT FUNCTIONS=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
-function Diet_Footprint(DietFoot Diet)
+function Diet_Footprint(sessvars.myObj.diet)
 {
     var DietFootprint = 0;
 
@@ -88,13 +88,13 @@ function Diet_Footprint(DietFoot Diet)
 
 function FinalFootprint()
 {
-    var foot = CalcElectricFootprint() + Transportation_Footprint();
+    var foot = CalcElectricFootprint() + Transportation_Footprint() + DietFootprint();
     return foot;
 }
 
 function FinalFootprintEmbed() 
 {
-    document.getElementById("footprint").innerHTML = FinalFootprint() + "killograms of CO2 per year."
+    document.getElementById("footprint").innerHTML = FinalFootprint() + "killograms of CO2 per year.";
 }
 
 var PrafulsLoveForTya = true;
