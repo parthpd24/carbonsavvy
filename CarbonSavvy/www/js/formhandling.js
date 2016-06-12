@@ -43,3 +43,29 @@ returnname() {
 returnmiles() {
     return sessvars.myObj.miles;
 }
+
+function Transportation_Footprint(sessvars.myObj.mileage, sessvars.Obj.miles) {
+    var g = 1/sessvars.myObj.mileage;
+    var GalYear = g*sessvars.Obj.miles;
+    var Footprint_Transport = GoalYear(0.00878);
+    return Footprint_Transport;
+
+}
+
+function CalcElectricFootprint(sessvars.myObj.kwh) //Final Equation for electricity carbon footprint
+{
+    var FinalElecFootprint = 0;
+    var ElecEmissionFactor = 496.3659508;
+
+    FinalElecFootprint = ElecEmissionFactor * sessvars.myObj.kwh;
+    return FinalElecFootprint;
+}
+
+function FinalFootprint()
+{
+    var foot = CalcElectricFootprint() + Transportation_Footprint();
+    return foot;
+}
+
+var PrafulsLoveForTya = true;
+
