@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="js/sessvars.js"></script>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div class="app">
+        <img src="img/largelogo.png" alt="CarbonSavvy logo">
+        <br>
+        <h1>Questions</h1>
+        <br>
+        <!-- Below action should be next page -->
+        <form action="footprint.html" method="GET">
+            <p>How many kilowatt-hours of electricity do you use per year? Check your electric bill.</p>
+            <input type="text" name="kwh" value="">
+            <br>
+            <p>What is your zip code?</p>
+            <input type="text" name="zipcode" value="">
+            <br>
+            <p>What is your car's gas mileage?</p>
+            <input type="text" name="mileage" value="">
+            <br>
+            <p>How many miles do you travel in a year?</p>
+            <input type="text" name="miles" value="">
+            <p>What is your diet?</p>
+            <input name="radio" type="radio" value="vegan"> <p>Vegan</p>
+            <input name="radio" type="radio" value="vegetarian"> <p>Vegetarian</p>
+            <input name="radio" type="radio" value="nonveg"> <p>Non-vegetarian</p>
+            <input name="radio" type="submit" value="Next" onclick="registerInfo(this.form)">
+        </form>
+    </div>
+    <!-- Javascript files -->
+    <script type="text/javascript" src="js/formhandling.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
