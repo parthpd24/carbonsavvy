@@ -1,6 +1,5 @@
 namefunc(form) {
     var name = form.name.value;
-    window.location.href = "hello.html";
 }
 
 nameoutput() {
