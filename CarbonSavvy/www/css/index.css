@@ -11,6 +11,10 @@ body {
   padding-top: 5%;
   display: block;
 }
+img {
+  max-width: 90%;
+  height: auto;
+}
 h1 {
   font-family: 'Calibri', Helvetica, sans-serif;
   font-size: 160%;

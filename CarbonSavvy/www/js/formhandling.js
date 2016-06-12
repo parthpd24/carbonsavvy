@@ -1,39 +1,38 @@
 namefunc(form) {
-    var name = form.name.value;
-    window.location.href = "hello.html";
+    sessvars.myObj.name = form.name.value;
 }
 
 nameoutput() {
-    document.getElementById(nameplace).innerHTML = "Hi there, " + name + "!";
+    document.getElementById(nameplace).innerHTML = "Hi there, " + sessvars.myObj.name + "!";
 }
 
 registerInfo(form) {
-    var kwh = form.kwh.value;
-    var zipcode = form.zipcode.value;
-    var mileage = form.mileage.value;
+    sessvars.myObj.kwh = form.kwh.value;
+    sessvars.myObj.zipcode = form.zipcode.value;
+    sessvars.myObj.mileage = form.mileage.value;
     for (var i = 0; i < document.getElementsByName('radio').length; i++) {
         if(document.getElementsByName('radio')[i].checked) {
-            var diet = document.getElementsByName('radio')[i].value;
+            sessvars.myObj.diet = document.getElementsByName('radio')[i].value;
         }
     }
 }
 
 returnkwh() {
-    return kwh;
+    return sessvars.myObj.kwh;
 }
 
 returnzipcode() {
-    return zipcode;
+    return sessvars.myObj.zipcode;
 }
 
 returnmileage() {
-    return mileage;
+    return sessvars.myObj.mileage;
 }
 
 returndiet() {
-    return diet;
+    return sessvars.myObj.diet;
 }
 
 returnname() {
-    return name;
+    return sessvars.myObj.name;
 }
