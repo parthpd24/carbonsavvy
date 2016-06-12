@@ -1,5 +1,10 @@
 bg = #E7E7E7
 txtcol = #353535
+brandcol = #5FD35F
+
+aligns(valr)
+    text-align: valr
+    float: valr
 
 fontstuff(size, color)
     font-family: 'Calibri', Helvetica, sans-serif
@@ -12,6 +17,17 @@ body
     -webkit-user-select: none
     background-color: bg
     fontstuff(130%, txtcol)
+    aligns(center)
+    padding-top: 5%
+    display: block
 
 h1
     fontstuff(160%, txtcol - #11)
+
+input[type=submit], button
+    background-color: brandcol
+    border: none
+    padding: 15px 30px
+    text-decoration: none
+    display: inline-block
+    fontstuff(20px, bg)
